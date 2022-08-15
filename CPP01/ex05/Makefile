@@ -5,18 +5,18 @@
 #                                                     +:+ +:+         +:+      #
 #    By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/08/14 21:22:26 by younjkim          #+#    #+#              #
-#    Updated: 2022/08/15 23:42:46 by younjkim         ###   ########.fr        #
+#    Created: 2022/08/16 00:07:23 by younjkim          #+#    #+#              #
+#    Updated: 2022/08/16 00:07:53 by younjkim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = replace
+NAME = Harl
 
 CC = c++
 
 FLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp
+SRC = main.cpp Harl.cpp
 
 all: $(NAME)
 
