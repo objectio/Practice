@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Aug 14 22:26:40 2022
+# Make data base, printed on Thu Aug 18 17:48:07 2022
 
 # Variables
 
@@ -17,7 +17,7 @@ make: *** No rule to make target 'all'.  Stop.
 # automatic
 ?F = $(notdir $?)
 # environment
-WSLENV = VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up
+WSLENV = VSCODE_WSL_EXT_LOCATION/up
 # default
 .SHELLFLAGS := -c
 # automatic
@@ -31,7 +31,7 @@ CURDIR := /home/younjkim/Practice/CPP01
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"ko","availableLanguages":{}}
+VSCODE_NLS_CONFIG = {"locale":"ko","availableLanguages":{"*":"ko"},"_languagePackId":"cbe5aafd932102a66266fc5a1fc1d63c.ko","_translationsConfigFile":"/home/younjkim/.vscode-server/data/clp/cbe5aafd932102a66266fc5a1fc1d63c.ko/tcf.json","_cacheRoot":"/home/younjkim/.vscode-server/data/clp/cbe5aafd932102a66266fc5a1fc1d63c.ko","_resolvedLanguagePackCoreLocation":"/home/younjkim/.vscode-server/data/clp/cbe5aafd932102a66266fc5a1fc1d63c.ko/6d9b74a70ca9c7733b29f0456fd8195364076dda","_corruptedFile":"/home/younjkim/.vscode-server/data/clp/cbe5aafd932102a66266fc5a1fc1d63c.ko/corrupted.info","_languagePackSupport":true}
 # environment
 _ = /home/younjkim/.vscode-server/bin/6d9b74a70ca9c7733b29f0456fd8195364076dda/node
 # makefile
@@ -51,9 +51,7 @@ PATH = /home/younjkim/.vscode-server/bin/6d9b74a70ca9c7733b29f0456fd8195364076dd
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-7fe75f1c-3acb-4cf7-ad2e-8d3444e7cdcf.sock
-# environment
-VSCODE_SERVER_TAR = /mnt/c/Users/younjkim/AppData/Local/Temp/vscode-remote-wsl/6d9b74a70ca9c7733b29f0456fd8195364076dda/vscode-server-stable-linux-x64.tar.gz
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-c2564dfc-e15c-41fd-905b-f07247182869.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -65,7 +63,7 @@ PWD = /home/younjkim/Practice/CPP01
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/8_interop
+WSL_INTEROP = /run/WSL/11_interop
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -143,7 +141,7 @@ WSL_DISTRO_NAME = Ubuntu
 # environment
 MOTD_SHOWN = update-motd
 # variable set hash-table stats:
-# Load=65/1024=6%, Rehash=0, Collisions=4/87=5%
+# Load=64/1024=6%, Rehash=0, Collisions=4/86=5%
 
 # Pattern-specific Variable Values
 
@@ -151,9 +149,9 @@ MOTD_SHOWN = update-motd
 
 # Directories
 
-# . (device 2064, inode 61104): 8 files, no impossibilities.
+# . (device 2064, inode 61104): 9 files, no impossibilities.
 
-# 8 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -203,12 +201,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 16 / storage = 123 B / avg = 7 B
-# current buf: size = 8162 B / used = 123 B / count = 16 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 128 B / avg = 7 B
+# current buf: size = 8162 B / used = 128 B / count = 17 / avg = 7 B
 
-# strcache performance: lookups = 19 / hit rate = 15%
+# strcache performance: lookups = 20 / hit rate = 15%
 # hash-table stats:
-# Load=16/8192=0%, Rehash=0, Collisions=1/19=5%
-# Finished Make data base on Sun Aug 14 22:26:40 2022
+# Load=17/8192=0%, Rehash=0, Collisions=1/20=5%
+# Finished Make data base on Thu Aug 18 17:48:07 2022
 
  
