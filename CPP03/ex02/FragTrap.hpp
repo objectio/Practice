@@ -1,38 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/13 17:37:18 by younjkim          #+#    #+#             */
-/*   Updated: 2022/08/17 17:04:42 by younjkim         ###   ########.fr       */
+/*   Created: 2022/08/19 17:23:53 by younjkim          #+#    #+#             */
+/*   Updated: 2022/08/19 20:34:47 by younjkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef FRAGTRAP_HPP
+# define FRAGTRAP_HPP
 
-Zombie::Zombie()
-{
-    this->name = "zombie";
-}
+#include <iostream>
+#include <string>
+#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
-void    	Zombie::setName(std::string str)
-{
-    this->name = str;
-}
+class FragTrap : public virtual ClapTrap {
+public:
+    FragTrap();
+    FragTrap(std::string name);
+    FragTrap(const FragTrap& f);
+    FragTrap& operator=(const FragTrap& f);
+    ~FragTrap();
+    void highFivesGuys(void);
+};
 
-std::string	Zombie::getName()
-{
-    return (this->name);
-}
-
-void    	Zombie::announce(void)
-{
-    std::cout << this->name << ": BraiiiiiiinnnzzzZ..." << std::endl;
-}
-
-Zombie::~Zombie()
-{
-    std::cout << this->name << " is destroyed." << std::endl;
-}
+#endif

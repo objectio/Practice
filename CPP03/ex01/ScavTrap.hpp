@@ -1,38 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/13 17:37:18 by younjkim          #+#    #+#             */
-/*   Updated: 2022/08/17 17:04:42 by younjkim         ###   ########.fr       */
+/*   Created: 2022/08/19 17:21:09 by younjkim          #+#    #+#             */
+/*   Updated: 2022/08/19 20:22:32 by younjkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef SCAVTRAP_HPP
+# define SCAVTRAP_HPP
 
-Zombie::Zombie()
-{
-    this->name = "zombie";
-}
+# include "ClapTrap.hpp"
 
-void    	Zombie::setName(std::string str)
-{
-    this->name = str;
-}
+class ScavTrap : public ClapTrap {
+public:
+    ScavTrap();
+    ScavTrap(std::string name);
+    ScavTrap(const ScavTrap& s);
+    ScavTrap& operator=(const ScavTrap& s);
+    ~ScavTrap();
+    void attack(const std::string& target);
+    void guardGate();
+};
 
-std::string	Zombie::getName()
-{
-    return (this->name);
-}
-
-void    	Zombie::announce(void)
-{
-    std::cout << this->name << ": BraiiiiiiinnnzzzZ..." << std::endl;
-}
-
-Zombie::~Zombie()
-{
-    std::cout << this->name << " is destroyed." << std::endl;
-}
+#endif

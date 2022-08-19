@@ -6,7 +6,7 @@
 /*   By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/16 00:09:19 by younjkim          #+#    #+#             */
-/*   Updated: 2022/08/16 02:21:06 by younjkim         ###   ########.fr       */
+/*   Updated: 2022/08/17 16:59:50 by younjkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ void    Harl::complain(std::string level)
     switch (check)
     {
     case 0:
+        std::cout << "I don't know what are you saying." << std::endl;
         break;
     
     case 1:

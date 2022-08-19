@@ -5,23 +5,23 @@
 #                                                     +:+ +:+         +:+      #
 #    By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/08/14 21:22:26 by younjkim          #+#    #+#              #
-#    Updated: 2022/08/17 16:53:04 by younjkim         ###   ########.fr        #
+#    Created: 2022/08/19 17:20:07 by younjkim          #+#    #+#              #
+#    Updated: 2022/08/19 18:48:30 by younjkim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = replace
+NAME = ScavTrap
 
-CC = c++
+CXX = c++
 
 FLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp
+SRC = main.cpp ClapTrap.cpp ScavTrap.cpp
 
 all: $(NAME)
 
 $(NAME): $(SRC)
-	$(CC) $(FLAGS) $(SRC) -o $(NAME)
+	$(CXX) $(FLAGS) $(SRC) -o $(NAME)
 
 clean:
 	rm -f $(NAME)

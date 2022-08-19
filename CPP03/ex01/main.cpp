@@ -1,38 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/13 17:37:18 by younjkim          #+#    #+#             */
-/*   Updated: 2022/08/17 17:04:42 by younjkim         ###   ########.fr       */
+/*   Created: 2022/08/19 18:56:32 by younjkim          #+#    #+#             */
+/*   Updated: 2022/08/19 19:02:13 by younjkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "ScavTrap.hpp"
 
-Zombie::Zombie()
+int main()
 {
-    this->name = "zombie";
-}
+	ScavTrap s1 = ScavTrap("s1");
 
-void    	Zombie::setName(std::string str)
-{
-    this->name = str;
-}
+	s1.takeDamage(20);
+    s1.attack("Hoo");
+    s1.beRepaired(7);
+	s1.guardGate();
 
-std::string	Zombie::getName()
-{
-    return (this->name);
-}
-
-void    	Zombie::announce(void)
-{
-    std::cout << this->name << ": BraiiiiiiinnnzzzZ..." << std::endl;
-}
-
-Zombie::~Zombie()
-{
-    std::cout << this->name << " is destroyed." << std::endl;
+	return (0);
 }

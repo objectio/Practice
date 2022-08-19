@@ -6,7 +6,7 @@
 /*   By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/16 00:08:01 by younjkim          #+#    #+#             */
-/*   Updated: 2022/08/16 02:22:11 by younjkim         ###   ########.fr       */
+/*   Updated: 2022/08/17 16:58:12 by younjkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,6 @@ int main(void)
     harl.complain("INFO");
     harl.complain("WARNING");
     harl.complain("ERROR");
+    harl.complain("UNKNOWN");
     return 0;
 }
