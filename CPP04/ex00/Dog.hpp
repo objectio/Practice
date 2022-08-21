@@ -6,7 +6,7 @@
 /*   By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/21 02:20:53 by younjkim          #+#    #+#             */
-/*   Updated: 2022/08/21 02:21:29 by younjkim         ###   ########.fr       */
+/*   Updated: 2022/08/21 11:37:16 by younjkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,11 @@
 #include "Cat.hpp"
 
 class Dog : public Animal {
-public:
+    public:
     Dog();
-    virtual ~Dog();
+    Dog(const Dog& copy);
+    Dog &operator=(const Dog& copy);
+    ~Dog();
     void makeSound() const;
 };
 

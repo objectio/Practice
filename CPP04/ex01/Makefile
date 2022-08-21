@@ -6,17 +6,17 @@
 #    By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/20 23:54:29 by younjkim          #+#    #+#              #
-#    Updated: 2022/08/20 23:54:31 by younjkim         ###   ########.fr        #
+#    Updated: 2022/08/21 11:00:39 by younjkim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ClapTrap
+NAME = Polymorphism
 
 CXX = c++
 
 FLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp ClapTrap.cpp
+SRC = main.cpp Animal.cpp Cat.cpp Dog.cpp Brain.cpp
 
 all: $(NAME)
 

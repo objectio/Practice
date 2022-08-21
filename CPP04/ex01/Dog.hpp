@@ -1,27 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/21 01:51:39 by younjkim          #+#    #+#             */
-/*   Updated: 2022/08/21 11:13:15 by younjkim         ###   ########.fr       */
+/*   Created: 2022/08/21 02:20:53 by younjkim          #+#    #+#             */
+/*   Updated: 2022/08/21 11:42:39 by younjkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CAT_HPP
-# define CAT_HPP
+#ifndef DOG_HPP
+# define DOG_HPP
 
-#include "Animal.hpp"
+#include "Cat.hpp"
+#include "Brain.hpp"
 
-class Cat : public Animal {
+class Dog : public Animal {
+    private:
+    Brain *brain;
+
     public:
-    Cat();
-    Cat(const Cat& copy);
-    Cat &operator=(const Cat& copy);
-    ~Cat();
+    Dog();
+    Dog(const Dog& copy);
+    Dog &operator=(const Dog& copy);
+    ~Dog();
     void makeSound() const;
+    void showThoughts() const;
 };
 
 #endif
