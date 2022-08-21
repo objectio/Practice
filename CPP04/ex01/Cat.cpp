@@ -6,7 +6,7 @@
 /*   By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/21 02:20:18 by younjkim          #+#    #+#             */
-/*   Updated: 2022/08/21 11:46:17 by younjkim         ###   ########.fr       */
+/*   Updated: 2022/08/21 17:00:28 by younjkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Cat::Cat() : Animal("Cat")
     this->brain = new Brain();
 }
 
-Cat::Cat(const Cat& copy) : Animal("'cat'")
+Cat::Cat(const Cat& copy) : Animal("Cat")
 {
     std::cout << "copy cat constructor called" << std::endl;
     this->brain = new Brain(*(copy.brain));

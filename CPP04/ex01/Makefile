@@ -6,11 +6,11 @@
 #    By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/20 23:54:29 by younjkim          #+#    #+#              #
-#    Updated: 2022/08/21 11:00:39 by younjkim         ###   ########.fr        #
+#    Updated: 2022/08/21 16:46:01 by younjkim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Polymorphism
+NAME = Polymorphism_2
 
 CXX = c++
 
