@@ -6,15 +6,14 @@
 /*   By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/21 02:21:50 by younjkim          #+#    #+#             */
-/*   Updated: 2022/08/21 11:12:52 by younjkim         ###   ########.fr       */
+/*   Updated: 2022/08/22 11:45:06 by younjkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 
-Dog::Dog() {
-    std::cout << "Constructor for Dog" << std::endl;
-    type = "'dog'";
+Dog::Dog() : Animal("Dog") {
+    std::cout << "default dog constructor called" << std::endl;
 }
 
 Dog::Dog(const Dog& copy) : Animal("cat")

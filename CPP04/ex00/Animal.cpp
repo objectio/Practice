@@ -6,15 +6,15 @@
 /*   By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/21 01:51:01 by younjkim          #+#    #+#             */
-/*   Updated: 2022/08/21 11:07:34 by younjkim         ###   ########.fr       */
+/*   Updated: 2022/08/22 11:41:14 by younjkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 
 Animal::Animal() {
-    std::cout << "Constructor for Animal" << std::endl;
-    type = "'animal'";
+    std::cout << "default animal constructor called" << std::endl;
+    this->type = "animal";
 }
 
 Animal::Animal(std::string type)

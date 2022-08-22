@@ -6,7 +6,7 @@
 /*   By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/21 02:23:20 by younjkim          #+#    #+#             */
-/*   Updated: 2022/08/21 19:09:27 by younjkim         ###   ########.fr       */
+/*   Updated: 2022/08/22 11:50:37 by younjkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,15 @@
 #include <string>
 
 class WrongAnimal {
-protected:
+    protected:
     std::string type;
 
-public:
+    public:
     WrongAnimal();
-    virtual ~WrongAnimal();
+    WrongAnimal(std::string type);
+    WrongAnimal(const WrongAnimal& copy);
+    WrongAnimal& operator=(const WrongAnimal& copy);
+    ~WrongAnimal();
     void makeSound() const;
     std::string getType() const;
 };
