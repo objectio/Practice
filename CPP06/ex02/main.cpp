@@ -6,7 +6,7 @@
 /*   By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 13:11:29 by younjkim          #+#    #+#             */
-/*   Updated: 2022/08/22 13:11:40 by younjkim         ###   ########.fr       */
+/*   Updated: 2022/08/23 12:41:01 by younjkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,5 +71,6 @@ int	main(void)
 	identify(base);
 	identify(*base);
 	delete base;
+	system("leaks Dynamic");
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 12:14:44 by younjkim          #+#    #+#             */
-/*   Updated: 2022/08/22 12:19:54 by younjkim         ###   ########.fr       */
+/*   Updated: 2022/08/22 19:07:01 by younjkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,8 +70,7 @@ void Form::beSigned(const Bureaucrat &b)
 		throw Form::GradeTooLowException();
 	else
 	{
-		std::cout << this->getName() << " getting signed by "
-				  << b.getName() << std::endl;
+		std::cout << b.getName() << " signed " << this->getName() << std::endl;
 		this->_signed = true;
 	}
 }

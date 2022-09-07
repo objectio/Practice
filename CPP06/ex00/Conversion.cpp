@@ -6,7 +6,7 @@
 /*   By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 12:59:44 by younjkim          #+#    #+#             */
-/*   Updated: 2022/08/22 13:07:11 by younjkim         ###   ########.fr       */
+/*   Updated: 2022/08/23 12:33:29 by younjkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,9 +61,9 @@ std::string	Conversion::checkVar(void)const
 {
 	if (this->_target.empty())
 		throw Conversion::StringEmpty();
-	if (this->_target.size() == 1 && (this->_target[0] > 47 && this->_target[0] < 58))
+	if (this->_target.size() == 1 && (47 < this->_target[0] && this->_target[0] < 58))
 		return ("int");
-	else if (this->_target.size() == 1 && (this->_target[0] > 32 && this->_target[0] < 127))
+	else if (this->_target.size() == 1 && (32 < this->_target[0] && this->_target[0] < 127))
 		return ("char");
 	else if (this->_target == "-inff" || this->_target == "+inff" || this->_target == "nanf" || this->_target == "-inf" || this->_target == "+inf" || this->_target == "nan")
 		return ("special");
@@ -71,7 +71,7 @@ std::string	Conversion::checkVar(void)const
 			|| ((countOccurence('-', this->_target) == 0) && (countOccurence('+', this->_target) == 1) && this->_target[0] == '+')
 			|| ((countOccurence('-', this->_target) == 0) && (countOccurence('+', this->_target) == 0)))
 	{
-		if (this->_target.find_first_not_of("-+0123456789"))
+		if (this->_target.find_first_not_of("-+0123456789") == std::string::npos)
 			return ("int");
 		else if ((countOccurence('.', this->_target) == 1) && (countOccurence('f', this->_target) == 1) && (this->_target.find_first_not_of("0123456789.f") == std::string::npos) && (this->_target[this->_target.size() - 1] == 'f') && (this->_target[0] != '.'))
 			return ("float");

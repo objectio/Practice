@@ -6,7 +6,7 @@
 /*   By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 12:22:18 by younjkim          #+#    #+#             */
-/*   Updated: 2022/08/22 12:22:25 by younjkim         ###   ########.fr       */
+/*   Updated: 2022/08/22 19:08:36 by younjkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ public:
 	int getGradeToSign() const;
 	int getGradeToExecute() const;
 	void canExecute(Bureaucrat const &executor) const;
-	virtual void execute(Bureaucrat const &executor) const = 0;
+	virtual void execute(Bureaucrat const &executor) const = 0; // pure virtual function
 
 	class GradeTooHighException : public std::exception
 	{

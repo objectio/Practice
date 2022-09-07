@@ -6,7 +6,7 @@
 /*   By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 12:17:03 by younjkim          #+#    #+#             */
-/*   Updated: 2022/08/22 12:18:08 by younjkim         ###   ########.fr       */
+/*   Updated: 2022/08/22 19:06:47 by younjkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ Bureaucrat &Bureaucrat::operator=(Bureaucrat const &rhs)
 
 std::ostream &operator<<(std::ostream &o, Bureaucrat const &i)
 {
-	o << i.getName() << ", grade: " << i.getGrade() << std::endl;
+	o << i.getName() << ", bureaucrat grade " << i.getGrade() << std::endl;
 	return o;
 }
 
@@ -80,7 +80,7 @@ void Bureaucrat::signForm(Form &form)
 	
 	catch (std::exception &e)
 	{
-		std::cerr << this->getName() << " cannot sign " << form.getName() << " because " << e.what() << std::endl;
+		std::cerr << this->getName() << " couldn't sign " << form.getName() << " because " << e.what() << std::endl;
 	}
 }
 

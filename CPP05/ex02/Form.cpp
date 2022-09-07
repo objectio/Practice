@@ -6,7 +6,7 @@
 /*   By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 12:22:32 by younjkim          #+#    #+#             */
-/*   Updated: 2022/08/22 12:23:41 by younjkim         ###   ########.fr       */
+/*   Updated: 2022/08/22 19:14:41 by younjkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,7 @@ void Form::canExecute(Bureaucrat const &executor) const
 		throw Form::FormNotSignedException();
 	else if (executor.getGrade() > this->gradeToExecute)
 		throw Form::GradeTooLowException();
-	std::cout << executor.getName() << " execute " << this->name << std::endl;
+	std::cout << executor.getName() << " executed " << this->name << std::endl;
 }
 
 const std::string &Form::getName() const

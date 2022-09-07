@@ -6,7 +6,7 @@
 /*   By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 12:08:33 by younjkim          #+#    #+#             */
-/*   Updated: 2022/08/22 12:10:43 by younjkim         ###   ########.fr       */
+/*   Updated: 2022/08/22 18:25:33 by younjkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ Bureaucrat &Bureaucrat::operator=(Bureaucrat const &rhs)
 
 std::ostream &operator<<(std::ostream &o, Bureaucrat const &i)
 {
-	o << i.getName() << ", grade: " << i.getGrade() << std::endl;
+	o << i.getName() << ", bureaucrat grade: " << i.getGrade() << std::endl;
 	return o;
 }
 

@@ -6,16 +6,12 @@
 /*   By: younjkim <younjkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 12:29:38 by younjkim          #+#    #+#             */
-/*   Updated: 2022/08/22 12:55:15 by younjkim         ###   ########.fr       */
+/*   Updated: 2022/08/22 19:09:24 by younjkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ShrubberyCreationForm.hpp"
 #include <fstream>
-
-/*
-** ------------------------------- CONSTRUCTOR --------------------------------
-*/
 
 ShrubberyCreationForm::ShrubberyCreationForm()
 	: Form("ShrubberyCreationForm", 145, 137), target("Default")
