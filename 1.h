@@ -1,26 +1,32 @@
 #pragma once
 
 #include <iostream>
+#include <map>
 #include <cstring>
 using namespace std;
 
 template <class T>
 class Draw
 {
+private:
+	vector<T> DataSet;
+
 public:
-	void AddRandom(int Prob, const T& Data); //È®·ü°ú µ¥ÀÌÅÍ ÀÔ·Â
-	bool GetRandom(T& Data) const; //È®·ü¿¡ µû¶ó µ¥ÀÌÅÍ 1°³¸¦ ¸®ÅÏÇÏ°í °ªÀÌ ¾øÀ¸¸é false ¸®ÅÏ
+	void AddRandom(int Prob, const T& Data); //È®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½
+	bool GetRandom(T& Data) const; //È®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ false ï¿½ï¿½ï¿½ï¿½
 };
 
 class Skill
 {
 private:
-	int odds;
-	string name;
+	int Prob;
+	string Name;
 
 public:
-	inline void setOdds(int newOdds) { this->odds = newOdds; }
-	inline int getOdds() { return this->odds; }
-	inline void setName(string newName) { this->name = newName; };
-	inline string getName() { return this->name; }
+	Skill();
+	Skill(string Name, int Prob);
+	inline void setProb(int newProb) { this->Prob = newProb; }
+	inline int getProb() { return this->Prob; }
+	inline void setName(string newName) { this->Name = newName; };
+	inline string getName() { return this->Name; }
 };
